@@ -1,0 +1,2 @@
+* simple emacs config
+- git clone https://github.com/foresight0246/dot-emacs.git

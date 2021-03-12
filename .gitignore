@@ -1,0 +1,13 @@
+.*
+!.git*
+*.db
+TAGS
+auto-save-list
+bookmarks
+elpa/
+plugins
+projectile*
+projects
+snippets/
+recentf
+transient
