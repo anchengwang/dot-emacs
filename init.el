@@ -1,10 +1,13 @@
 (when (version< emacs-version "27.0") (package-initialize))
 
+(defun frame-maximized()
+  (unless (frame-parameter nil 'fullscreen)
+    (toggle-frame-maximized)
+    )
+  (add-to-list 'default-frame-alist '(fullscreen . maximized)))
+
 ;; 启动全屏
-(unless (frame-parameter nil 'fullscreen)
-  (toggle-frame-maximized)
-  )
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; (frame-maximized)
 
 ;; 设置custom文件
 (setq custom-file "~/.emacs.d/custom.el")
@@ -29,5 +32,6 @@
 ;; major modes
 (require 'core-major-modes)
 ;; 插件工具
-(require 'core-implements)
-
+;; (require 'core-implements)
+;; EAF (emacs application framework)
+;; (require 'core-eaf)

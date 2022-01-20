@@ -1,40 +1,36 @@
 (use-package company
   :hook
   (after-init . global-company-mode)
-  :init
-  (setq company-backends
-        '(
-          company-capf
-          company-dabbrev-code
-          company-keywords
-          company-files
-          company-css
-          company-dabbrev
-          )
-        )
+  ;; :init
+  ;; (setq company-backends
+  ;;       '(company-capf
+  ;;         company-dabbrev-code
+  ;;         company-keywords
+  ;;         company-files
+  ;;         company-css
+  ;;         company-dabbrev))
   :bind
-  (
-   ;; ("M-/" . company-complete)
-   :map company-active-map
+  (("C-c f" . company-files)
+   (:map company-active-map
    ("C-p" . company-select-previous)
    ("C-n" . company-select-next)
    ("<tab>" . company-complete-common-or-cycle)
    :map company-search-map
    ("C-p" . company-select-previous)
-   ("C-n" . company-select-next))
-  :config
-  (setq
-   company-tooltip-limit 20
-   company-tooltip-align-annotations t
-   company-dabbrev-other-buffers 'all
-   ;; t means search buffers with same major mode
-   company-dabbrev-code-other-buffers t
-   company-dabbrev-code-ignore-case nil
-   company-dabbrev-ignore-case nil
-   company-dabbrev-downcase nil
-   company-minimum-prefix-length 1
-   company-idle-delay 0
-   company-require-match nil)
+   ("C-n" . company-select-next)))
+  ;; :config
+  ;; (setq
+  ;;  company-tooltip-limit 20
+  ;;  company-tooltip-align-annotations t
+  ;;  company-dabbrev-other-buffers 'all
+  ;;  ;; t means search buffers with same major mode
+  ;;  company-dabbrev-code-other-buffers t
+  ;;  company-dabbrev-code-ignore-case nil
+  ;;  company-dabbrev-ignore-case nil
+  ;;  company-dabbrev-downcase nil
+  ;;  company-minimum-prefix-length 2
+  ;;  company-idle-delay 0.2
+  ;;  company-require-match nil)
   )
 
 (use-package company-box
@@ -48,33 +44,60 @@
   (js-jsx-mode . emmet-mode)
   (typescript-mode . emmet-mode)
   :config
-  (define-key emmet-mode-keymap (kbd "C-j") 'emmet-expand-line)
-  ;; (setq emmet-expand-jsx-className? t)
+  (setq emmet-expand-jsx-className? t)
   )
 
 ;; 快速插入片段
 (use-package yasnippet
+  :bind
+  ("C-c Y" . yas-new-snippet)
   :config
   (yas-global-mode 1)
   (yas/initialize)
   (yas/load-directory "~/.emacs.d/snippets")
-  (global-set-key (kbd "M-y n") 'yas-new-snippet)
   )
 
 ;; ----- lsp补全  {
 ;; --------------------------------------------------------
 
 (use-package lsp-mode
-  ;; :hook
-  ;; (js-jsx-mode . lsp)
-  ;; (typescript-mode . lsp)
-  )
+  :hook
+  (c-mode . lsp)
+  (c++-mode . lsp)
+  (js-jsx-mode . lsp)
+  (typescript-mode . lsp)
+  (rust-mode . lsp)
+  :config
+  (add-to-list 'lsp-language-id-configuration '(js-jsx-mode . "javascript"))
+  ;; enable log only for debug
+  (setq lsp-log-io nil)
+  ;; use `evil-matchit' instead
+  (setq lsp-enable-folding nil)
+  ;; no real time syntax check
+  (setq lsp-diagnostic-package :none)
+  ;; handle yasnippet by myself
+  (setq lsp-enable-snippet nil)
+  ;; turn off for better performance
+  (setq lsp-enable-symbol-highlighting nil)
+  ;; use ffip instead
+  (setq lsp-enable-links nil)
+  ;; auto restart lsp
+  (setq lsp-restart 'auto-restart)
+  (setq lsp-enable-imenu nil)
+  (setq lsp-idle-delay 0.2)
+  (setq lsp-response-timeout 5)
+  ;; (setq lsp-rust-server 'rust-analyzer)
+  :commands lsp)
 
 ;; lsp optionally
 (use-package lsp-ui :commands lsp-ui-mode)
 
 ;; if you are ivy user
-(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+;; (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+
+;; 代码检查
+;; (use-package flycheck
+;;   :init (global-flycheck-mode))
 
 ;; --------------------------------------------------------
 ;; }

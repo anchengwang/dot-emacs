@@ -14,30 +14,16 @@
   (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescript-mode))
   )
 
+(use-package vue-mode
+  :config
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
+  )
+
 (use-package prettier-js
   :hook
-  (js-jsx-mode . prettier-js-mode)
   (typescript-mode . prettier-js-mode)
-  ;; :config
-  ;; (add-hook 'web-mode-hook '(lambda () (unless (eq (string-match-p "\\.js$" (buffer-file-name)) nil) (prettier-js-mode))))
-  ;; (setq prettier-js-command "prettier")
-  ;; (setq prettier-js-args '(
-  ;;                          "--trailing-comma" "all"
-  ;;                          "--bracket-spacing" "true"
-  ;;                          ))
-  ;; (defun prettier-js-command-exchange ()
-  ;;   "exchange prettier-js-command value"
-  ;;   (interactive)
-  ;;   (progn
-  ;;     (if (string= prettier-js-command "prettier")
-  ;;         (setq prettier-js-command "prettier-eslint_d")
-  ;;       (setq prettier-js-command "prettier")
-  ;;       )
-  ;;     (message "current prettier-js-command: %s" prettier-js-command)
-  ;;     )
-  ;;   )
-  ;; (global-set-key (kbd "C-M-\\") 'prettier-js-command-exchange)
-  ;; (setq prettier-js-command "prettier-eslint_d")
+  :config
+  (setq prettier-js-args '("--print-width" "100"))
   )
 
 ;; --------------------------------------------------------
@@ -73,17 +59,39 @@
 ;; --------------------------------------------------------
 ;; }
 
-;; ----- org  {
-;; --------------------------------------------------------
+
+;; (org-babel-do-load-languages
+;;   'org-babel-load-languages
+;;   '(;; other Babel languages
+;;     (ditaa . t)
+;;     (plantuml . t)
+;;     (latex . t)
+;;     (org . t)
+;;     (dot . t)
+;;     (sql . t)
+;;     (python . t)
+;;     ))
+
+;; (setq org-confirm-babel-evaluate nil)
+
+;; (add-hook 'org-babel-after-execute-hook 'org-display-inline-images 'append)
+
+                                        ; Make babel results blocks lowercase
+;; (setq org-babel-results-keyword "results")
+
+;; (setq org-plantuml-jar-path
+;;       (expand-file-name "~/.emacs.d/scripts/plantuml.jar"))
+;; (setq org-ditaa-jar-path 
+;;       (expand-file-name "~/.emacs.d/scripts/ditaa.jar"))
 
 ;; 打开 org-indent mode
-(setq org-startup-indented t)
+;; (setq org-startup-indented t)
 
-(use-package valign
-  :load-path "~/.emacs.d/plugins/valign"
-  :hook
-  (org-mode . valign-mode)
-  )
+;; (use-package valign
+;;   :load-path "~/.emacs.d/plugins/valign"
+;;   :hook
+;;   (org-mode . valign-mode)
+;;   )
 
 ;; --------------------------------------------------------
 ;; }
@@ -93,7 +101,30 @@
 
 (use-package yaml-mode
   :config
-  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+  (add-to-list 'auto-mode-alist '("\\.ya?ml\\'" . yaml-mode))
+  )
+
+;; --------------------------------------------------------
+;; }
+
+(use-package glsl-mode
+  :config
+  (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
+  )
+
+(use-package nginx-mode
+  :config
+  (add-to-list 'auto-mode-alist '("/nginx/sites-\\(?:available\\|enabled\\)/" . nginx-mode))
+  (setq nginx-indent-level 2)
+  )
+
+;; ----- rust  {
+;; --------------------------------------------------------
+
+(use-package rust-mode
+  :config
+  (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+  (setq rust-indent-offset 2)
   )
 
 ;; --------------------------------------------------------

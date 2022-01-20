@@ -14,8 +14,8 @@
 ;; ----- prefix keymap  {
 ;; --------------------------------------------------------
 
-(define-prefix-command 'M-y-map)
-(global-set-key (kbd "M-y") 'M-y-map)
+;; (define-prefix-command 'M-y-map)
+;; (global-set-key (kbd "M-y") 'M-y-map)
 
 ;; --------------------------------------------------------
 ;; }
@@ -78,7 +78,5 @@
 
 ;; --------------------------------------------------------
 ;; }
-
-
 
 (provide 'core-keybindings)

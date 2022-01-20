@@ -1,0 +1,414 @@
+(AutoLog) Called: EPCClientHandler._send('call', 1, Symbol('eval-in-emacs'), ['eaf--first-start', 'NTA4MzE=', 'RmFsc2U='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: ThreadingEPCHandler.setup()
+(AutoLog) Returns: ThreadingEPCHandler.setup(...) = None
+(AutoLog) Called: ThreadingEPCHandler.handle()
+receiving...
+received: length = 95; data = b'(call 5 new_buffer ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "http://www.baidu.com" "browser" ""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 5 new_buffer ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "http://www.baidu.com" "browser" ""))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(5, Symbol('new_buffer'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', 'http://www.baidu.com', 'browser', ''])
+receiving...
+received: length = 15; data = b'(return 1 nil)\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 5, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 5, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+received: length = 78; data = b'(call 6 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:717:55:721:811"))\n'
+(AutoLog) Called: EPCClientHandler._handle(b'(return 1 nil)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 6 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:717:55:721:811"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(6, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:717:55:721:811'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 6, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 6, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._send('call', 2, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 2 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 2 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 3, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw==', 'aHR0cHM6Ly93d3cuYmFpZHUuY29t', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tLw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 3 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 3 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 4, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw==', '55m+5bqm5LiA5LiL77yM5L2g5bCx55+l6YGT', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tLw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 4 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 4 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 77; data = b'(call 7 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 7 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(7, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 7, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 7, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._send('call', 5, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 5 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 5 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 63; data = b'(call 8 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe5\x8d\xa1"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 8 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe5\x8d\xa1"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(8, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '卡'])
+received: length = 63; data = b'(call 9 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe5\x8f\x8c"))\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 8, None]
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 9 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe5\x8f\x8c"))\n')
+(AutoLog) Called: ThreadingEPCHandler._send('return', 8, None)
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(9, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '双'])
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 9, None]
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 64; data = b'(call 10 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe7\xa6\xbb"))\n'
+(AutoLog) Called: ThreadingEPCHandler._send('return', 9, None)
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 10 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe7\xa6\xbb"))\n')
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle_call(10, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '离'])
+received: length = 64; data = b'(call 11 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe5\x90\x88"))\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 10, None]
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 11 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe5\x90\x88"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._send('return', 10, None)
+(AutoLog) Called: ThreadingEPCHandler._handle_call(11, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '合'])
+received: length = 64; data = b'(call 12 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe4\xb8\x9c"))\n'
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 12 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe4\xb8\x9c"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(12, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '东'])
+receiving...
+received: length = 64; data = b'(call 13 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe6\x96\xb9"))\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 12, None]
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 11, None]
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 13 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe6\x96\xb9"))\n')
+(AutoLog) Called: ThreadingEPCHandler._send('return', 12, None)
+receiving...
+received: length = 64; data = b'(call 14 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe4\xb8\xbd"))\n'
+(AutoLog) Called: ThreadingEPCHandler._send('return', 11, None)
+(AutoLog) Called: ThreadingEPCHandler._handle_call(13, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '方'])
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 14 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe4\xb8\xbd"))\n')
+receiving...
+received: length = 64; data = b'(call 15 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe6\x99\xaf"))\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 13, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 13, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle_call(14, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '丽'])
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 15 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "\xe6\x99\xaf"))\n')
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(15, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '景'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 14, None]
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 15, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 15, None)
+(AutoLog) Called: ThreadingEPCHandler._send('return', 14, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 69; data = b'(call 16 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "<return>"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 16 send_key ("bae3-b657-1603-3dbf-829a-e8da-cb5c" "<return>"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(16, Symbol('send_key'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c', '<return>'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 16, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 16, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 6, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw==', '5Y2h5Y+M56a75ZCI5Lic5pa55Li95pmvX+eZvuW6puaQnOe0og==', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tL3M/aWU9dXRmLTgmZj04JnJzdl9icD0xJnJzdl9pZHg9MSZ0bj1iYWlkdSZ3ZD3ljaHlj4znprvlkIjkuJzmlrnkuL3mma8mZmVubGVpPTI1NiZyc3ZfcHE9ODk5ZTZhYzIwMDA2MDA5ZCZyc3ZfdD0wNTEyVmVrRHBUMWtuZG44b0dDTnFpTiUyQkRMRjclMkJBdjVsdHUxaUxsUFFxQ1R2RFNpOExuNmZaQmo1aWcmcnFsYW5nPWNuJnJzdl9kbD1pYiZyc3ZfZW50ZXI9MSZyc3Zfc3VnMz04JnJzdl9zdWcyPTAmcnN2X2J0eXBlPWkmaW5wdXRUPTU0NiZyc3Zfc3VnND01NDc='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 6 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 6 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 7, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 8, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 9, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 13; data = b'(return 7 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 7 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 10, Symbol('eval-in-emacs'), ['eaf--create-new-browser-buffer', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 8 "")\n'
+receiving...
+received: length = 13; data = b'(return 9 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 8 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._handle(b'(return 9 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(return 10 #<buffer Browser Popup Window 3f9f-0923-ea50-f415-3a74-0026-c907>)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 10 #<buffer Browser Popup Window 3f9f-0923-ea50-f415-3a74-0026-c907>)\n')
+(return 10 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('3f9f-0923-ea50-f415-3a74-0026-c907>')]
+EPCError("(return 10 ...): Got too many arguments in the reply: [Symbol('#<buffer'), Symbol('Browser'), Symbol('Popup'), Symbol('Window'), Symbol('3f9f-0923-ea50-f415-3a74-0026-c907>')]")
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 17 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:811"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 17 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:811"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(17, Symbol('update_views'), ['3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:811'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 17, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 17, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 11, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 11 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 11 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 12, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 13, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 14, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 15, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 16, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 17, Symbol('eval-in-emacs'), ['eaf-focus-buffer', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw=='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 18, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw==', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms/dXJsPWdEQWc2OGtLY2lXT1pfOHNxcFJ2azRFN2d3a1NZZlIyOU1FVlJCSEc2TktYbTZsYldIaVpkMnFzU2x6c0VtdUIxNFJ6YjI0ZkdYTXAzaTJ4WmVjVlBxJndkPSZlcWlkPWIyNDZkYTEyMDAwMjU0OGIwMDAwMDAwNDYwYjc0MWE1', 'aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms/dXJsPWdEQWc2OGtLY2lXT1pfOHNxcFJ2azRFN2d3a1NZZlIyOU1FVlJCSEc2TktYbTZsYldIaVpkMnFzU2x6c0VtdUIxNFJ6YjI0ZkdYTXAzaTJ4WmVjVlBxJndkPSZlcWlkPWIyNDZkYTEyMDAwMjU0OGIwMDAwMDAwNDYwYjc0MWE1'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 12 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 12 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 13 "")\n'
+receiving...
+received: length = 14; data = b'(return 14 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 13 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._handle(b'(return 14 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 15 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 15 "")\n')
+received: length = 14; data = b'(return 16 t)\n'
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 16 t)\n')
+received: length = 14; data = b'(return 17 t)\n'
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 17 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 14; data = b'(return 18 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 18 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 19, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw==', 'aHR0cHM6Ly9kZWFsZXIueWljaGUuY29tLzEwMDA4MTA1My9jYXJzLmh0bWw=', 'aHR0cHM6Ly9kZWFsZXIueWljaGUuY29tLzEwMDA4MTA1My9jYXJzLmh0bWw='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 19 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 19 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 20, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw==', '44CQ6ZW/5a6J5rG96L2mfOmVv+Wuieaxvei9psK35paw6IO95rqQ5rG96L2m5oql5Lu3X+axvei9pjRT5bqX5oql5Lu344CR6KWE6Ziz6L+c6YCa6ZW/5a6JLeaYk+i9pg==', 'aHR0cHM6Ly9kZWFsZXIueWljaGUuY29tLzEwMDA4MTA1My9jYXJzLmh0bWw='])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 14; data = b'(return 20 t)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 20 t)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 18 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:667"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 18 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:667"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(18, Symbol('update_views'), ['3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:667'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 18, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 18, None)
+(AutoLog) Called: EPCClientHandler._send('call', 21, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 15; data = b'(return 21 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 21 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 19 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 19 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(19, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 19, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 19, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 22, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 22 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 22 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 20 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 20 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(20, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 20, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 20, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 23, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 23 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 23 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 21 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 21 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(21, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 21, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 21, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 24, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 24 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 24 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 22 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 22 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(22, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 22, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 22, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 25, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 25 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 25 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 23 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:811"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 23 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:811"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(23, Symbol('update_views'), ['3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:811'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 23, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 23, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 26, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 26 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 26 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 24 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:667"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 24 update_views ("3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:667"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(24, Symbol('update_views'), ['3f9f-0923-ea50-f415-3a74-0026-c907:1:2:55:1436:667'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 24, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 24, None)
+(AutoLog) Called: EPCClientHandler._send('call', 27, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 15; data = b'(return 27 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 27 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 61; data = b'(call 25 kill_buffer ("3f9f-0923-ea50-f415-3a74-0026-c907"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 25 kill_buffer ("3f9f-0923-ea50-f415-3a74-0026-c907"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(25, Symbol('kill_buffer'), ['3f9f-0923-ea50-f415-3a74-0026-c907'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 25, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 25, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 78; data = b'(call 26 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 26 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(26, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:811'])
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 26, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 26, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 28, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 29, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 30, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'M2Y5Zi0wOTIzLWVhNTAtZjQxNS0zYTc0LTAwMjYtYzkwNw==', '', ''])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 28 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 28 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 15; data = b'(return 29 "")\n'
+receiving...
+received: length = 16; data = b'(return 30 nil)\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 29 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._handle(b'(return 30 nil)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 78; data = b'(call 27 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 27 update_views ("bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(27, Symbol('update_views'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c:1:2:55:1436:667'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 27, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 27, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 31, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 31 "")\n'
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 31 "")\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 61; data = b'(call 28 kill_buffer ("bae3-b657-1603-3dbf-829a-e8da-cb5c"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 28 kill_buffer ("bae3-b657-1603-3dbf-829a-e8da-cb5c"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(28, Symbol('kill_buffer'), ['bae3-b657-1603-3dbf-829a-e8da-cb5c'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 28, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 28, None)
+received: length = 28; data = b'(call 29 update_views (""))\n'
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 29 update_views (""))\n')
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle_call(29, Symbol('update_views'), [''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 29, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 29, None)
+(AutoLog) Called: EPCClientHandler._send('call', 32, Symbol('eval-in-emacs'), ['eaf-activate-emacs-window'])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: EPCClientHandler._send('call', 33, Symbol('eval-in-emacs'), ['eaf--update-buffer-details', 'YmFlMy1iNjU3LTE2MDMtM2RiZi04MjlhLWU4ZGEtY2I1Yw==', '', ''])
+(AutoLog) Returns: EPCClientHandler._send(...) = None
+received: length = 15; data = b'(return 32 "")\n'
+receiving...
+received: length = 16; data = b'(return 33 nil)\n'
+(AutoLog) Called: EPCClientHandler._handle(b'(return 32 "")\n')
+receiving...
+(AutoLog) Called: EPCClientHandler._handle(b'(return 33 nil)\n')
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+(AutoLog) Returns: EPCClientHandler._handle(...) = None
+received: length = 22; data = b'(call 30 cleanup nil)\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 30 cleanup nil)\n')
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler.handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler.finish()
+(AutoLog) Returns: ThreadingEPCHandler.finish(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle_call(30, Symbol('cleanup'), [])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 30, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 30, None)
+BrokenPipeError(32, 'Broken pipe')

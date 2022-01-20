@@ -1,15 +1,13 @@
 ;; 引入路径
 (use-package exec-path-from-shell
   :if (memq window-system '(mac ns x))
-  :config
-  (exec-path-from-shell-initialize)
-  )
+  :hook
+  (after-init . exec-path-from-shell-initialize))
 
 ;; 文本区域选择
 (use-package expand-region
-  :config
-  (global-set-key (kbd "C-=") 'er/expand-region)
-  )
+  :bind
+  ("C-=" . er/expand-region))
 
 ;; 文本注释
 (use-package evil-nerd-commenter
@@ -27,12 +25,13 @@
 
 ;; 窗口跳转
 (use-package ace-window
+  :bind
+  ("C--" . ace-window)
   :config
-  (global-set-key (kbd "C--") 'ace-window)
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
-  (setq aw-background t)
-  (setq aw-minibuffer-flag 1)
-  (setq aw-ignore-current nil)
+  ;; (setq aw-background t)
+  ;; (setq aw-minibuffer-flag 1)
+  ;; (setq aw-ignore-current nil)
   )
 
 ;; 彩虹括号
