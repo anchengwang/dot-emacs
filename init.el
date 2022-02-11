@@ -7,7 +7,7 @@
   (add-to-list 'default-frame-alist '(fullscreen . maximized)))
 
 ;; 启动全屏
-;; (frame-maximized)
+(frame-maximized)
 
 ;; 设置custom文件
 (setq custom-file "~/.emacs.d/custom.el")
