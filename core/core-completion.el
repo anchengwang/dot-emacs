@@ -1,14 +1,6 @@
 (use-package company
   :hook
   (after-init . global-company-mode)
-  ;; :init
-  ;; (setq company-backends
-  ;;       '(company-capf
-  ;;         company-dabbrev-code
-  ;;         company-keywords
-  ;;         company-files
-  ;;         company-css
-  ;;         company-dabbrev))
   :bind
   (("C-c f" . company-files)
    (:map company-active-map
@@ -18,19 +10,6 @@
    :map company-search-map
    ("C-p" . company-select-previous)
    ("C-n" . company-select-next)))
-  ;; :config
-  ;; (setq
-  ;;  company-tooltip-limit 20
-  ;;  company-tooltip-align-annotations t
-  ;;  company-dabbrev-other-buffers 'all
-  ;;  ;; t means search buffers with same major mode
-  ;;  company-dabbrev-code-other-buffers t
-  ;;  company-dabbrev-code-ignore-case nil
-  ;;  company-dabbrev-ignore-case nil
-  ;;  company-dabbrev-downcase nil
-  ;;  company-minimum-prefix-length 2
-  ;;  company-idle-delay 0.2
-  ;;  company-require-match nil)
   )
 
 (use-package company-box
@@ -68,6 +47,7 @@
   (typescript-mode . lsp)
   (rust-mode . lsp)
   :config
+  (setq lsp-headerline-breadcrumb-enable nil)
   (add-to-list 'lsp-language-id-configuration '(js-jsx-mode . "javascript"))
   ;; enable log only for debug
   (setq lsp-log-io nil)

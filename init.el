@@ -35,3 +35,4 @@
 ;; (require 'core-implements)
 ;; EAF (emacs application framework)
 ;; (require 'core-eaf)
+(put 'set-goal-column 'disabled nil)

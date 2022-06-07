@@ -20,12 +20,6 @@
 
 (use-package ivy-posframe
   :config
-  ;; ivy-posframe-display
-  ;; ivy-posframe-display-at-frame-center
-  ;; ivy-posframe-display-at-window-center
-  ;; ivy-posframe-display-at-frame-bottom-left
-  ;; ivy-posframe-display-at-frame-bottom-window-center
-  ;; ivy-posframe-display-at-window-bottom-left
   (setq ivy-posframe-display-functions-alist
         '((t               . ivy-posframe-display-at-frame-top-center)
           (swiper          . ivy-display-function-fallback)))
@@ -53,11 +47,11 @@
   :config (diredfl-global-mode t)
   )
 
-(use-package neotree
-  :bind
-  ("C-c t" . neotree-toggle)
-  :config
-  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-  )
+;; (use-package neotree
+;;   :bind
+;;   ("C-c t" . neotree-toggle)
+;;   :config
+;;   (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+;;   )
 
 (provide 'core-manages)
