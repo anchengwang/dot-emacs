@@ -68,8 +68,9 @@
   :config
   ;; (load-theme 'doom-dracula t)
   ;; (load-theme 'doom-horizon t)
-  (load-theme 'doom-tomorrow-day t)
+  ;; (load-theme 'doom-tomorrow-day t)
   ;; (load-theme 'doom-nord-light t)
+  (load-theme 'doom-one-light t)
   )
 
 ;; --------------------------------------------------------

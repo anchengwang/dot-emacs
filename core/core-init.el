@@ -3,7 +3,7 @@
 
 (fset 'yes-or-no-p'y-or-n-p)
 ;; 标题设置
-(setq frame-title-format '(buffer-file-name "%f"))
+;; (setq frame-title-format '(buffer-file-name "%f"))
 ;; 显示行号
 ;; (global-display-line-numbers-mode t)
 ;; 非选中窗口禁用光标

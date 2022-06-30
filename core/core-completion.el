@@ -1,19 +1,4 @@
-(use-package company
-  :hook
-  (after-init . global-company-mode)
-  :bind
-  (("C-c f" . company-files)
-   (:map company-active-map
-   ("C-p" . company-select-previous)
-   ("C-n" . company-select-next)
-   ("<tab>" . company-complete-common-or-cycle)
-   :map company-search-map
-   ("C-p" . company-select-previous)
-   ("C-n" . company-select-next)))
-  )
-
-(use-package company-box
-  :hook (company-mode . company-box-mode))
+(use-package posframe)
 
 ;; html标签补全
 (use-package emmet-mode
@@ -36,50 +21,8 @@
   (yas/load-directory "~/.emacs.d/snippets")
   )
 
-;; ----- lsp补全  {
-;; --------------------------------------------------------
-
-(use-package lsp-mode
-  :hook
-  (c-mode . lsp)
-  (c++-mode . lsp)
-  (js-jsx-mode . lsp)
-  (typescript-mode . lsp)
-  (rust-mode . lsp)
-  :config
-  (setq lsp-headerline-breadcrumb-enable nil)
-  (add-to-list 'lsp-language-id-configuration '(js-jsx-mode . "javascript"))
-  ;; enable log only for debug
-  (setq lsp-log-io nil)
-  ;; use `evil-matchit' instead
-  (setq lsp-enable-folding nil)
-  ;; no real time syntax check
-  (setq lsp-diagnostic-package :none)
-  ;; handle yasnippet by myself
-  (setq lsp-enable-snippet nil)
-  ;; turn off for better performance
-  (setq lsp-enable-symbol-highlighting nil)
-  ;; use ffip instead
-  (setq lsp-enable-links nil)
-  ;; auto restart lsp
-  (setq lsp-restart 'auto-restart)
-  (setq lsp-enable-imenu nil)
-  (setq lsp-idle-delay 0.2)
-  (setq lsp-response-timeout 5)
-  ;; (setq lsp-rust-server 'rust-analyzer)
-  :commands lsp)
-
-;; lsp optionally
-(use-package lsp-ui :commands lsp-ui-mode)
-
-;; if you are ivy user
-;; (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
-
-;; 代码检查
-;; (use-package flycheck
-;;   :init (global-flycheck-mode))
-
-;; --------------------------------------------------------
-;; }
+(add-to-list 'load-path "~/.emacs.d/libraries/lsp-bridge")
+(require 'lsp-bridge)
+(global-lsp-bridge-mode)
 
 (provide 'core-completion)
