@@ -10,7 +10,7 @@
   (global-set-key (kbd "M-s") 'counsel-git-grep)
   (global-set-key (kbd "C-c C-r") 'ivy-resume)
   (global-set-key (kbd "C-c C-o") 'ivy-occur)
-  (global-set-key (kbd "C-x y") 'counsel-yank-pop)
+  (global-set-key (kbd "C-x w") 'counsel-yank-pop)
   )
 
 (use-package counsel-projectile
@@ -28,7 +28,7 @@
 
 (use-package ivy-yasnippet
   :bind
-  ("C-c y" . ivy-yasnippet))
+  ("C-x y" . ivy-yasnippet))
 
 ;; github管理
 (use-package magit

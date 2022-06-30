@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: std_cout
+# key: slog
+# --
+std::cout << ${1:something} << std::endl;

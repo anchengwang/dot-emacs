@@ -1,27 +1,9 @@
-;; ----- key-binding tools  {
-;; --------------------------------------------------------
-
 ;; 快捷键提示
 (use-package which-key
   :config
   (which-key-mode)
   (which-key-setup-side-window-bottom)
   )
-
-;; --------------------------------------------------------
-;; }
-
-;; ----- prefix keymap  {
-;; --------------------------------------------------------
-
-;; (define-prefix-command 'M-y-map)
-;; (global-set-key (kbd "M-y") 'M-y-map)
-
-;; --------------------------------------------------------
-;; }
-
-;; ----- ctrl  {
-;; --------------------------------------------------------
 
 (global-set-key (kbd "C-x t") 'load-theme)
 
@@ -33,22 +15,7 @@
 (global-set-key (kbd "C-c r") 'winner-redo)
 (global-set-key (kbd "C-c u") 'winner-undo)
 
-;; --------------------------------------------------------
-;; }
-
-;; ----- meta  {
-;; --------------------------------------------------------
-
 (global-set-key (kbd "M-o") 'new-previous-line)
-
-;; --------------------------------------------------------
-;; }
-
-
-
-
-;; ----- func  {
-;; --------------------------------------------------------
 
 (defun new-next-line ()
   "任意位置向下新建行"
@@ -75,8 +42,5 @@
   (interactive)
   (if (eq (string-match-p "\\.json$" (buffer-file-name)) nil) (indent-region) (json-pretty-print-buffer))
     )
-
-;; --------------------------------------------------------
-;; }
 
 (provide 'core-keybindings)

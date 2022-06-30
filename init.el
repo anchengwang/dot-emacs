@@ -31,8 +31,5 @@
 (require 'core-completion)
 ;; major modes
 (require 'core-major-modes)
-;; 插件工具
-;; (require 'core-implements)
-;; EAF (emacs application framework)
-;; (require 'core-eaf)
+
 (put 'set-goal-column 'disabled nil)

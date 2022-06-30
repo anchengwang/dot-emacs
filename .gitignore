@@ -8,7 +8,6 @@ elpa/
 plugins
 projectile*
 projects
-snippets/
 recentf
 transient
 libraries/*

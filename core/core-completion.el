@@ -13,14 +13,13 @@
 
 ;; 快速插入片段
 (use-package yasnippet
-  :bind
-  ("C-c Y" . yas-new-snippet)
   :config
   (yas-global-mode 1)
   (yas/initialize)
   (yas/load-directory "~/.emacs.d/snippets")
   )
 
+;; lsp bridge
 (add-to-list 'load-path "~/.emacs.d/libraries/lsp-bridge")
 (require 'lsp-bridge)
 (global-lsp-bridge-mode)

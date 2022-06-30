@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: react.templete
+# key: rhook
+# --
+import React, { useEffect, useState } from "react";
+
+export default (props) => {
+  useEffect(() => {}, []);
+
+  return ($1);
+}
