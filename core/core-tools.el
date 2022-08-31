@@ -77,10 +77,11 @@
   (defface my-yellow '((t (:foreground "dim grey" :background "yellow"))) "")
   (defface my-chartreuse '((t (:foreground "dim grey" :background "chartreuse"))) "")
   (defface my-green '((t (:foreground "dim grey" :background "green"))) "")
-  (defface my-sgreen '((t (:foreground "dim grey" :background "spring green"))) "")
+  (defface my-sgreen '((t (:foreground "black" :background "spring green"))) "")
   (defface my-cyan '((t (:foreground "dim grey" :background "cyan"))) "")
   (defface my-blue '((t (:foreground "white" :background "blue"))) "")
   (defface my-dmagenta '((t (:foreground "white" :background "dark magenta"))) "")
+  (defface my-white '((t (:foreground "#000000" :background "#A1E1FF"))) "")
 
   (setq telephone-line-faces
         '((red . (my-red . my-red))
@@ -94,6 +95,7 @@
           (cyan . (my-cyan . my-cyan))
           (blue . (my-blue . my-blue))
           (dmagenta . (my-dmagenta . my-dmagenta))
+          (white . (my-white . my-white))
           (evil . telephone-line-evil-face)
           (accent . (telephone-line-accent-active . telephone-line-accent-inactive))
           (nil . (mode-line . mode-line-inactive))))
@@ -110,16 +112,16 @@
                    )))))
   
   (setq telephone-line-lhs
-        '((red . (telephone-line-buffer-segment))
-          (orange . (telephone-line-vc-segment))
-          (nil . (telephone-line-major-mode-segment))
-          (dmagenta . (telephone-line-airline-position-segment))
+        '(
+          (ored . (telephone-line-projectile-segment))
+          (sgreen . (telephone-line-vc-segment))
+          (white . (telephone-line-buffer-segment))
           (nil . (lsp-minor-show))
           ))
   (setq telephone-line-rhs
         '((nil . ())
-          (cyan . (telephone-line-projectile-segment))
+          (nil . (telephone-line-major-mode-segment))
           ))
-  (setq telephone-line-height 18))
+  (setq telephone-line-height 16))
                       
 (provide 'core-tools)
