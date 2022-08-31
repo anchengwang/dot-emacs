@@ -18,10 +18,6 @@
   :if (display-graphic-p)
   )
 
-(use-package vscode-dark-plus-theme
-  :config
-  (load-theme 'vscode-dark-plus t))
-
 (use-package doom-themes
   :config
   (setq doom-themes-enable-bold nil
