@@ -19,6 +19,8 @@
 (use-package prettier-js
   :hook
   (typescript-mode . prettier-js-mode)
+  (js-mode . prettier-js-mode)
+  (js-jsx-mode . prettier-js-mode)
   :config
   (setq prettier-js-args '("--print-width" "100"))
   )
@@ -60,12 +62,14 @@
 (use-package rust-mode
   :config
   (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+  (setq rust-format-on-save t)
   (setq rust-indent-offset 2)
+  (add-hook 'rust-mode-hook
+          (lambda () (setq indent-tabs-mode nil)))
   )
 
 (use-package markdown-mode
   :mode ("README\\.md\\'" . gfm-mode)
-  :init (setq markdown-command "multimarkdown")
-  )
+  :init (setq markdown-command "multimarkdown"))
 
 (provide 'core-major-modes)

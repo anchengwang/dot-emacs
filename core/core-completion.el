@@ -1,5 +1,3 @@
-(use-package posframe)
-
 ;; html标签补全
 (use-package emmet-mode
   :hook
@@ -19,9 +17,24 @@
   (yas/load-directory "~/.emacs.d/snippets")
   )
 
-;; lsp bridge
-(add-to-list 'load-path "~/.emacs.d/libraries/lsp-bridge")
-(require 'lsp-bridge)
-(global-lsp-bridge-mode)
+(use-package company
+  :hook
+  (after-init . global-company-mode))
+
+(use-package lsp-mode
+  :hook
+  (js-mode . lsp)
+  (js-jsx-mode . lsp)
+  (c++-mode . lsp)
+  (rust-mode . lsp)
+  :config
+  (setq lsp-headerline-breadcrumb-enable nil)
+  (setq lsp-flycheck-live-reporting nil)
+  (setq lsp-diagnostics-provider nil)
+  )
+
+(use-package lsp-ui
+  :config
+  (setq lsp-ui-doc-enable t))
 
 (provide 'core-completion)

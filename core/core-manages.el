@@ -47,11 +47,4 @@
   :config (diredfl-global-mode t)
   )
 
-;; (use-package neotree
-;;   :bind
-;;   ("C-c t" . neotree-toggle)
-;;   :config
-;;   (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-;;   )
-
 (provide 'core-manages)

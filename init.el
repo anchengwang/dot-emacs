@@ -19,6 +19,8 @@
 (require 'core-init)
 ;; 包&源管理
 (require 'core-package)
+;; major modes
+(require 'core-major-modes)
 ;; 颜色主题
 (require 'core-themes)
 ;; 自定义快捷键
@@ -29,7 +31,5 @@
 (require 'core-manages)
 ;; 补全工具
 (require 'core-completion)
-;; major modes
-(require 'core-major-modes)
 
 (put 'set-goal-column 'disabled nil)

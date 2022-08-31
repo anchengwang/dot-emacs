@@ -13,7 +13,7 @@
 ;; 关闭自动保存
 (setq auto-save-default nil)
 ;; 自动更新buffer变更文件
-(global-auto-revert-mode t)
+;; (global-auto-revert-mode t)
 ;; 自动变更周期
 ;; （setq auto-revert-interval 3)
 ;; 编辑文件备份路径变更
