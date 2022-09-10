@@ -19,11 +19,12 @@
   )
 
 (use-package ivy-posframe
+  :hook
+  (after-init . ivy-posframe-mode)
   :config
   (setq ivy-posframe-display-functions-alist
         '((t               . ivy-posframe-display-at-frame-top-center)
           (swiper          . ivy-display-function-fallback)))
-  (ivy-posframe-mode 1)
   )
 
 (use-package ivy-yasnippet

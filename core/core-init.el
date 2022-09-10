@@ -48,4 +48,7 @@
 ;; 启动winner mode
 (winner-mode t)
 
+;; 开启行号
+(global-display-line-numbers-mode)
+
 (provide 'core-init)

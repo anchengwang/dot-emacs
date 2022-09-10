@@ -30,7 +30,7 @@
   :config
   (setq lsp-headerline-breadcrumb-enable nil)
   (setq lsp-flycheck-live-reporting nil)
-  (setq lsp-diagnostics-provider nil)
+  ;; (setq lsp-diagnostics-provider nil)
   )
 
 (use-package lsp-ui
