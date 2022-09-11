@@ -1,11 +1,9 @@
-;;((native-compile-async "~/.emacs.d/elpa" 4 t))
-(setq inhibit-splash-screen t)
-
+;; (setq inhibit-splash-screen t)
 (fset 'yes-or-no-p'y-or-n-p)
 ;; 标题设置
-;; (setq frame-title-format '(buffer-file-name "%f"))
+(setq frame-title-format '(buffer-file-name "%f"))
 ;; 显示行号
-;; (global-display-line-numbers-mode t)
+(global-display-line-numbers-mode t)
 ;; 非选中窗口禁用光标
 (setq-default cursor-in-non-selected-windows nil)
 ;; 行高亮
@@ -44,11 +42,7 @@
 ;; 符号配对
 (setq electric-pair-inhibit-predicate 'electric-pair-conservative-inhibit)
 (electric-pair-mode 1)
-
 ;; 启动winner mode
 (winner-mode t)
-
-;; 开启行号
-(global-display-line-numbers-mode)
 
 (provide 'core-init)

@@ -1,4 +1,4 @@
-(when (version< emacs-version "27.0") (package-initialize))
+;; (when (version< emacs-version "27.0") (package-initialize))
 
 (defun frame-maximized()
   (unless (frame-parameter nil 'fullscreen)
@@ -31,5 +31,3 @@
 (require 'core-manages)
 ;; 补全工具
 (require 'core-completion)
-
-(put 'set-goal-column 'disabled nil)
