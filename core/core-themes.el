@@ -1,10 +1,10 @@
 ;; 中英文字体设置
 ;; Inconsolata |  Yuppy TC | Wawati SC | Ayuthaya
-(set-face-attribute 'default nil :font "Inconsolata 13")
+(set-face-attribute 'default nil :font "Inconsolata 14")
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
                     charset
-                    (font-spec :family "WenQuanYi Micro Hei" :size 11)))
+                    (font-spec :family "WenQuanYi Micro Hei" :size 12)))
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (set-scroll-bar-mode nil)   
