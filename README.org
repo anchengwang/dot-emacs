@@ -1,4 +1,4 @@
 *** simple emacs config
 #BEGIN_CENTER
-lightweight configuration
+light-weight configuration
 #END_CENTER
